@@ -1,3 +1,4 @@
+import CloseIcon from "./CloseIcon";
 import { useEffect, useRef, useState } from "react";
 import {
   cartTotal,
@@ -54,7 +55,7 @@ export default function DemoModal({
             Interactive Demo — {demo.title}
           </b>
           <button aria-label="Tutup demo" onClick={onClose}>
-            ✕
+            <CloseIcon />
           </button>
         </div>
         <div className="modal-body">

@@ -1,3 +1,4 @@
+import CloseIcon from "./CloseIcon";
 import { useEffect, useRef, useState } from "react";
 import { navigation } from "../data";
 
@@ -117,7 +118,7 @@ export default function Header() {
           aria-controls="mobile-menu"
           onClick={() => setOpen(!open)}
         >
-          {open ? "✕" : "≡"}
+          {open ? <CloseIcon /> : "≡"}
         </button>
       </div>
       {open && (
